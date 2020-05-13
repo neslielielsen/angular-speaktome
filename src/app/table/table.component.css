@@ -1,0 +1,84 @@
+
+.header {
+  min-height: 64px;
+  padding: 8px 24px;
+  margin: 1% 1%;
+  background-color: dimgrey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 1%;
+}
+
+.mat-column-id {
+  flex: 0 0 5%;
+}
+
+.mat-column-date {
+  flex: 0 0 10%;
+}
+
+.mat-column-tag {
+  flex: 0 0 12%;
+}
+
+.mat-column-text {
+  text-align: justify;
+  margin-right: 5px;
+}
+
+.mat-column-play {
+  flex: 0 0 3%;
+}
+
+@media screen and (max-width: 960px) {
+  .mat-table {
+    border: 0;
+    vertical-align: middle
+  }
+
+  .mat-table caption {
+    font-size: 1em;
+  }
+
+  .container {
+    margin: 4% 4%;
+  }
+
+  .mat-table .mat-row {
+    border-bottom: 5px solid #ddd;
+    display: block;
+  }
+
+  .mat-table .mat-cell {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1em;
+    text-align: right;
+    margin-top: 3%;
+    margin-right: 2%;
+  }
+
+  #pl {
+    margin-bottom: -60px;
+  }
+
+
+  .mat-table .mat-cell:before {
+
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 5%;
+    font-size: .85em;
+  }
+  .mat-table .mat-cell:last-child {
+    border-bottom: 0;
+  }
+  .mat-table .mat-cell:first-child {
+    margin-top: 4%;
+  }
+}
